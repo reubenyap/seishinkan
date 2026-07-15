@@ -1,7 +1,12 @@
 import Image from "next/image";
+import type { ComponentProps } from "react";
 
 const whatsappUrl = "https://wa.me/60138119120";
 const mapsUrl = "https://maps.app.goo.gl/4yyuNLaK4pV1WM728";
+
+function StaticImage(props: ComponentProps<typeof Image>) {
+  return <Image {...props} unoptimized />;
+}
 
 export default function Home() {
   return (
@@ -9,7 +14,7 @@ export default function Home() {
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Seishinkan Aikido home">
           <span className="brand-logo" aria-hidden="true">
-            <Image src="/images/seishinkan-logo.png" alt="" width={72} height={72} priority />
+            <StaticImage src="/images/seishinkan-logo.png" alt="" width={72} height={72} priority />
           </span>
           <span>
             <strong>Seishinkan</strong>
@@ -49,12 +54,12 @@ export default function Home() {
             <span>Three classes weekly</span>
           </div>
           <div className="hero-crest" aria-label="Official Seishinkan Aikido dojo mark">
-            <Image src="/images/seishinkan-logo.png" alt="Seishinkan Aikido dojo logo" width={132} height={132} />
+            <StaticImage src="/images/seishinkan-logo.png" alt="Seishinkan Aikido dojo logo" width={132} height={132} />
             <span><small>Our dojo mark</small><strong>Seishinkan Aikido</strong></span>
           </div>
         </div>
         <figure className="hero-photo">
-          <Image
+          <StaticImage
             src="/images/seishinkan-community.jpg"
             alt="Seishinkan Aikido members gathered together in the dojo"
             fill
@@ -72,7 +77,7 @@ export default function Home() {
         </div>
         <div className="story-grid">
           <div className="story-photo">
-            <Image
+            <StaticImage
               src="/images/seishinkan-partner-practice.jpg"
               alt="Seishinkan students practising together on the mat"
               fill
@@ -117,7 +122,7 @@ export default function Home() {
           </div>
         </div>
         <div className="affiliation-photo">
-          <Image
+          <StaticImage
             src="/images/seishinkan-group.jpg"
             alt="A formal group photograph of Seishinkan Aikido members and teachers"
             fill
@@ -162,10 +167,10 @@ export default function Home() {
 
       <section className="gallery" aria-label="Life at Seishinkan">
         <div className="gallery-image gallery-tall">
-          <Image src="/images/seishinkan-training.jpg" alt="Students practising Aikido techniques in the dojo" fill sizes="50vw" />
+          <StaticImage src="/images/seishinkan-training.jpg" alt="Students practising Aikido techniques in the dojo" fill sizes="50vw" />
         </div>
         <div className="gallery-image">
-          <Image src="/images/seishinkan-after-class.jpg" alt="Seishinkan members relaxing together after class" fill sizes="50vw" />
+          <StaticImage src="/images/seishinkan-after-class.jpg" alt="Seishinkan members relaxing together after class" fill sizes="50vw" />
         </div>
         <div className="gallery-caption">
           <p className="eyebrow">More from the mat</p>
@@ -197,7 +202,7 @@ export default function Home() {
             <a className="button button-light" href={whatsappUrl} target="_blank" rel="noreferrer">Open WhatsApp</a>
           </div>
           <a className="qr-wrap" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Open WhatsApp chat with Seishinkan Aikido">
-            <Image src="/images/whatsapp-qr.png" alt="WhatsApp QR code for Seishinkan Aikido at +60 13 811 9120" width={420} height={420} />
+            <StaticImage src="/images/whatsapp-qr.png" alt="WhatsApp QR code for Seishinkan Aikido at +60 13 811 9120" width={420} height={420} />
             <span>Scan with your phone</span>
           </a>
         </div>
@@ -206,7 +211,7 @@ export default function Home() {
       <footer>
         <div className="brand footer-brand">
           <span className="brand-logo" aria-hidden="true">
-            <Image src="/images/seishinkan-logo.png" alt="" width={72} height={72} />
+            <StaticImage src="/images/seishinkan-logo.png" alt="" width={72} height={72} />
           </span>
           <span><strong>Seishinkan Aikido</strong><small>Kuching, Sarawak · Since 1998</small></span>
         </div>
