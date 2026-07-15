@@ -23,6 +23,7 @@ export default function Home() {
         </a>
         <nav aria-label="Main navigation">
           <a href="#story">Our story</a>
+          <a href="#aikido">What is Aikido</a>
           <a href="#classes">Classes</a>
           <a href="#visit">Visit</a>
         </nav>
@@ -86,22 +87,40 @@ export default function Home() {
           </div>
           <div className="story-copy">
             <p className="dropcap">
-              Seishinkan Aikido was founded in 1998 by Jong Kong Min. From its
-              beginning, the dojo has been a place for careful study, friendship
-              and growth through the practice of Aikido.
+              Seishinkan Aikido was founded in 1998 by Jong Kong Min and Colin
+              Jarraw. From its beginning, the dojo has been a place for careful
+              study, friendship and growth through the practice of Aikido.
             </p>
             <p>
-              Leadership passed from Jong Kong Min to Desmond Andrew, and then to
-              Reuben Yap, 5th Dan Aikikai, who serves as the current dojo-cho.
+              The current dojo-cho of Seishinkan Aikido is Reuben Yap (5th Dan),
+              who is assisted by Jack Chong Wan Fung (3rd Dan), Desmond Andrew
+              (2nd Dan) and Teguh Yuwono Pratiknyo (2nd Dan).
             </p>
-            <div className="lineage" aria-label="Seishinkan dojo leadership lineage">
-              <div><span>Founder</span><strong>Jong Kong Min</strong></div>
-              <span aria-hidden="true">→</span>
-              <div><span>Successor</span><strong>Desmond Andrew</strong></div>
-              <span aria-hidden="true">→</span>
-              <div><span>Dojo-cho</span><strong>Reuben Yap</strong><small>5th Dan Aikikai</small></div>
-            </div>
           </div>
+        </div>
+      </section>
+
+      <section className="aikido section" id="aikido">
+        <div className="aikido-heading">
+          <p className="eyebrow">What is Aikido?</p>
+          <h2>A martial way<br /><em>for inner growth.</em></h2>
+        </div>
+        <div className="aikido-copy">
+          <p className="dropcap">
+            Aikido is a budo (martial way) that is focused on personal development
+            and character refinement through martial art practice. The primary goal
+            of Aikido is to overcome oneself instead of cultivating violence or
+            aggressiveness.
+          </p>
+          <p>
+            Aikido utilizes circular movements, joint locks, throws and pins to
+            redirect an opponent&apos;s momentum and balance rather than meeting force
+            with force. Its roots come from Daitō-ryū Aiki-jūjutsu, which was a
+            fighting style created from the Seiwa Minamoto clan and handed down from
+            generation to generation. Aikido was also heavily influenced by
+            traditional swordsmanship, which can be seen in techniques where the
+            hands emulate a sword.
+          </p>
         </div>
       </section>
 
@@ -188,8 +207,9 @@ export default function Home() {
           <p className="eyebrow">Come say hello</p>
           <h2>Find us<br /><em>in Kuching.</em></h2>
           <address>
-            3rd Floor, SL 28<br />
-            Jalan Simpang Tiga, Panovel
+            3rd Floor, SL 28,<br />
+            Jalan Simpang Tiga,<br />
+            Panovel Commercial Centre, Kuching
           </address>
           <a className="text-link" href={mapsUrl} target="_blank" rel="noreferrer">Open in Google Maps ↗</a>
         </div>
