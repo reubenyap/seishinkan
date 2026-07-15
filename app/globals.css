@@ -179,20 +179,19 @@ h1 em, h2 em { display: block; color: var(--terracotta); font-weight: 400; }
 .story-copy { max-width: 760px; }
 .story-copy > p { color: var(--muted); font-size: 18px; }
 .dropcap::first-letter { float: left; margin: 8px 10px 0 0; color: var(--terracotta); font-family: var(--serif); font-size: 72px; line-height: .7; }
-.lineage {
-  margin-top: 42px;
-  padding-top: 30px;
+
+.aikido {
   display: grid;
-  grid-template-columns: 1fr auto 1fr auto 1fr;
-  gap: 18px;
-  align-items: center;
+  grid-template-columns: minmax(300px, .9fr) 1.1fr;
+  gap: clamp(54px, 8vw, 138px);
+  align-items: start;
+  background: var(--soft-paper);
   border-top: 1px solid var(--rule);
 }
-.lineage div span, .lineage div strong, .lineage div small { display: block; }
-.lineage div span { margin-bottom: 5px; color: var(--terracotta); font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
-.lineage div strong { font-family: var(--serif); font-size: 18px; }
-.lineage div small { color: var(--muted); font-size: 12px; }
-.lineage > span { color: var(--terracotta); }
+.aikido-heading h2 { font-size: clamp(48px, 5vw, 80px); letter-spacing: -.035em; }
+.aikido-copy { max-width: 760px; padding-left: clamp(30px, 4vw, 64px); border-left: 1px solid var(--rule); }
+.aikido-copy p { margin: 0; color: var(--muted); font-size: 18px; }
+.aikido-copy p + p { margin-top: 28px; }
 
 .affiliation { display: grid; grid-template-columns: 52% 48%; background: var(--sage); color: var(--warm-white); }
 .affiliation-copy { padding: clamp(72px, 9vw, 140px) clamp(34px, 7vw, 116px) clamp(72px, 9vw, 140px) clamp(34px, 5.5vw, 92px); }
@@ -262,7 +261,7 @@ h1 em, h2 em { display: block; color: var(--terracotta); font-weight: 400; }
 }
 .whatsapp-card .eyebrow { color: #e9b9a6; }
 .whatsapp-card h3 { font-size: clamp(34px, 3.2vw, 50px); }
-.phone { display: inline-block; margin-top: 14px; font-family: var(--serif); font-size: clamp(27px, 2.4vw, 39px); border-bottom: 1px solid rgba(255,255,255,.5); }
+.phone { display: inline-block; max-width: 100%; margin-top: 14px; font-family: var(--serif); font-size: clamp(24px, 2.4vw, 39px); white-space: nowrap; border-bottom: 1px solid rgba(255,255,255,.5); }
 .whatsapp-card > div > p:not(.eyebrow) { max-width: 470px; color: #e0e3dd; }
 .button-light { margin-top: 16px; background: var(--warm-white); color: var(--sage); }
 .button-light:hover, .button-light:focus-visible { background: var(--paper); }
@@ -329,8 +328,9 @@ a:focus-visible { outline: 3px solid #d88c72; outline-offset: 4px; }
   .section-heading h2, .affiliation h2, .visit h2 { font-size: clamp(44px, 13vw, 62px); }
   .story-grid { grid-template-columns: 1fr; gap: 38px; }
   .story-photo { min-height: 380px; }
-  .lineage { grid-template-columns: 1fr; gap: 20px; }
-  .lineage > span { transform: rotate(90deg); justify-self: start; }
+  .aikido { grid-template-columns: 1fr; gap: 42px; }
+  .aikido-heading h2 { font-size: clamp(44px, 13vw, 62px); }
+  .aikido-copy { padding: 34px 0 0; border-top: 1px solid var(--rule); border-left: 0; }
   .affiliation-copy { padding: 76px 24px; }
   .affiliation-photo { min-height: 420px; }
   .practical { grid-template-columns: 1fr; }
