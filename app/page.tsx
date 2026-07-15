@@ -51,12 +51,8 @@ export default function Home() {
           </div>
           <div className="hero-note">
             <span>Beginners welcome</span>
-            <span>Adults &amp; teens</span>
+            <span>Ages 11 and above</span>
             <span>Three classes weekly</span>
-          </div>
-          <div className="hero-crest" aria-label="Official Seishinkan Aikido dojo mark">
-            <StaticImage src="/images/seishinkan-logo.png" alt="Seishinkan Aikido dojo logo" width={132} height={132} />
-            <span><small>Our dojo mark</small><strong>Seishinkan Aikido</strong></span>
           </div>
         </div>
         <figure className="hero-photo">
@@ -72,10 +68,6 @@ export default function Home() {
       </section>
 
       <section className="story section" id="story">
-        <div className="section-heading">
-          <p className="eyebrow">Our story</p>
-          <h2>A living tradition,<br /><em>warmly shared.</em></h2>
-        </div>
         <div className="story-grid">
           <div className="story-photo">
             <StaticImage
@@ -85,17 +77,27 @@ export default function Home() {
               sizes="(max-width: 760px) 100vw, 35vw"
             />
           </div>
-          <div className="story-copy">
-            <p className="dropcap">
-              Seishinkan Aikido was founded in 1998 by Jong Kong Min and Colin
-              Jarraw. From its beginning, the dojo has been a place for careful
-              study, friendship and growth through the practice of Aikido.
-            </p>
-            <p>
-              The current dojo-cho of Seishinkan Aikido is Reuben Yap (5th Dan),
-              who is assisted by Jack Chong Wan Fung (3rd Dan), Desmond Andrew
-              (2nd Dan) and Teguh Yuwono Pratiknyo (2nd Dan).
-            </p>
+          <div className="story-content">
+            <p className="eyebrow">Our story</p>
+            <h2>A living tradition,<br /><em>warmly shared.</em></h2>
+            <div className="story-copy">
+              <p className="story-intro">
+                Seishinkan Aikido was founded in 1998 by Jong Kong Min and Colin
+                Jarraw. From its beginning, the dojo has been a place for careful
+                study, friendship and growth through the practice of Aikido.
+              </p>
+              <div className="story-leadership">
+                <p className="story-label">Dojo leadership</p>
+                <p>
+                  The current dojo-cho of Seishinkan Aikido is <strong>Reuben Yap
+                  (5th Dan)</strong>.
+                </p>
+                <p>
+                  He is assisted by Jack Chong Wan Fung (3rd Dan), Desmond Andrew
+                  (2nd Dan) and Teguh Yuwono Pratiknyo (2nd Dan).
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -107,19 +109,19 @@ export default function Home() {
         </div>
         <div className="aikido-copy">
           <p className="dropcap">
-            Aikido is a budo (martial way) that is focused on personal development
-            and character refinement through martial art practice. The primary goal
-            of Aikido is to overcome oneself instead of cultivating violence or
-            aggressiveness.
+            Aikido is a modern Japanese budo—a martial way that develops body, mind
+            and character through disciplined practice. Rather than measuring
+            progress through competition, students learn to remain composed, work
+            respectfully with a partner and cultivate the strength to overcome their
+            own fear, tension and ego.
           </p>
           <p>
-            Aikido utilizes circular movements, joint locks, throws and pins to
-            redirect an opponent&apos;s momentum and balance rather than meeting force
-            with force. Its roots come from Daitō-ryū Aiki-jūjutsu, which was a
-            fighting style created from the Seiwa Minamoto clan and handed down from
-            generation to generation. Aikido was also heavily influenced by
-            traditional swordsmanship, which can be seen in techniques where the
-            hands emulate a sword.
+            Its techniques use natural, circular movement to lead an attack off
+            balance, then resolve it through throws, joint controls or pins. Instead
+            of meeting force with force, practitioners learn to blend with movement
+            and redirect momentum without unnecessary conflict. Drawing on
+            Daitō-ryū Aiki-jūjutsu and traditional Japanese swordsmanship, Aikido
+            carries that heritage in its posture, distance and use of the hands.
           </p>
         </div>
       </section>
@@ -155,6 +157,10 @@ export default function Home() {
           <p className="eyebrow">Train with us</p>
           <h2>Make space<br /><em>for practice.</em></h2>
           <p>Come watch a class, meet the community, or join us on the mat.</p>
+          <div className="age-guidance">
+            <strong>11+</strong>
+            <span>Regular classes welcome students aged 11 and above. We do not currently offer classes for younger children.</span>
+          </div>
         </div>
         <div className="schedule-card">
           <p className="card-label">Weekly class schedule</p>
