@@ -165,11 +165,11 @@ export default function Home() {
         <div className="schedule-card">
           <p className="card-label">Weekly class schedule</p>
           <div className="schedule-row">
-            <div><strong>Monday</strong><span>Evening class</span></div>
+            <div><strong>Tuesday</strong><span>Evening class</span></div>
             <time>7:30–9:00 pm</time>
           </div>
           <div className="schedule-row">
-            <div><strong>Wednesday</strong><span>Evening class</span></div>
+            <div><strong>Thursday</strong><span>Evening class</span></div>
             <time>7:30–9:00 pm</time>
           </div>
           <div className="schedule-row">
